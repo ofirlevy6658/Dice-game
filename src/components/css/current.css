@@ -1,0 +1,8 @@
+.scoreBox {
+	background-color: slateblue;
+	color: black;
+	border: skyblue solid 3px;
+	width: 150px;
+	text-align: center;
+	border-radius: 50px;
+}
