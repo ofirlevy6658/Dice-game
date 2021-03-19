@@ -1,14 +1,21 @@
 import { Component } from "react";
 import Board from "./Board";
-import Roll from "./Roll";
+import ControlPanel from "./ControlPanel";
 import "./css/game.css";
+
 class Game extends Component {
+	state = {
+		score: 0,
+		current: 0,
+		dice: [null, null],
+	};
+
 	render() {
 		return (
 			<div className="container">
 				<div className="game">
 					<Board />
-					<Roll />
+					<ControlPanel />
 					<Board />
 				</div>
 			</div>

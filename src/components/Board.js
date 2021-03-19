@@ -2,11 +2,6 @@ import { Component } from "react";
 import Current from "./Current";
 import "./css/board.css";
 class Board extends Component {
-	state = {
-		score: 0,
-		current: 0,
-		dice: [null, null],
-	};
 	render() {
 		return (
 			<div className="board-content">
