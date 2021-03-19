@@ -2,9 +2,9 @@ import { Component } from "react";
 import Current from "./Current";
 import "./css/board.css";
 
-class Board extends Component {
+class Board2 extends Component {
 	shouldComponentUpdate({ turn }) {
-		return !turn ? true : false;
+		return turn ? true : false;
 	}
 	render() {
 		return (
@@ -17,4 +17,4 @@ class Board extends Component {
 	}
 }
 
-export default Board;
+export default Board2;
