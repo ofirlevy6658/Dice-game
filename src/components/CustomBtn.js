@@ -1,9 +1,9 @@
 import React from "react";
 // import "./css/controlpanel.css";
 
-const CustomBtn = ({ nameBtn, rollFunc }) => {
+const CustomBtn = ({ nameBtn, onClickFunc }) => {
 	return (
-		<button onClick={rollFunc} className="btn">
+		<button onClick={onClickFunc} className="btn">
 			{nameBtn}
 		</button>
 	);

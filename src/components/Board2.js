@@ -10,7 +10,7 @@ class Board2 extends Component {
 		return (
 			<div className="board-content">
 				<h1>PLAYER</h1>
-				<h3>Score:</h3>
+				<h3>{this.props.totalScore}</h3>
 				<Current currentScore={this.props.currentScore} />
 			</div>
 		);
