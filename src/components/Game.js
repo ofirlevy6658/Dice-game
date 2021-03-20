@@ -6,9 +6,9 @@ import "./css/game.css";
 
 class Game extends Component {
 	state = {
-		total1: null,
+		total1: 0,
 		currentScore1: 0,
-		total2: null,
+		total2: 0,
 		currentScore2: 0,
 		dice: [null, null],
 		turn: 0, // false mean player 1 , true player 2
@@ -81,11 +81,11 @@ class Game extends Component {
 		const randomTurn = Math.floor(Math.random() * 2);
 		// after winning I need to render both of them so that why I set state to 1 and 0 before I random turn
 		await this.setState({
-			total1: null,
+			total1: 0,
 			currentScore1: 0,
-			total2: null,
+			total2: 0,
 			currentScore2: 0,
-			dice: [0, 0],
+			dice: [null, null],
 			turn: 0,
 			RoundFinish: false,
 		});
