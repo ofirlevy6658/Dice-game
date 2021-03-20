@@ -1,6 +1,5 @@
 .control {
 	margin: auto;
-	border: solid 3px orange;
 	width: 18%;
 	text-align: center;
 	height: 70%;
@@ -12,11 +11,15 @@
 img {
 	border: crimson solid 2px;
 }
-
+/* btns */
 #btn {
 	width: 100px;
 	margin: 0 auto;
 	display: inline-block;
+}
+.input {
+	width: 50%;
+	margin: 0 auto;
 }
 
 .restart {

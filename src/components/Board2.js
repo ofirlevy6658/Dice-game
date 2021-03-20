@@ -17,6 +17,7 @@ class Board2 extends Component {
 			<div className="board-content board2">
 				<h1>PLAYER2</h1>
 				<h1>{this.props.totalScore}</h1>
+				<p>WINS:{this.props.wins}</p>
 				<Current currentScore={this.props.currentScore} />
 			</div>
 		);
