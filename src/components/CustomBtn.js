@@ -1,9 +1,8 @@
 import React from "react";
-// import "./css/controlpanel.css";
 
 const CustomBtn = ({ nameBtn, onClickFunc }) => {
 	return (
-		<button onClick={onClickFunc} className="btn">
+		<button onClick={onClickFunc} id="btn" className="ui positive button">
 			{nameBtn}
 		</button>
 	);

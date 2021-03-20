@@ -8,9 +8,17 @@
 	flex-direction: column;
 	justify-content: space-around;
 }
-/* .btn {
-} */
 
 img {
 	border: crimson solid 2px;
+}
+
+#btn {
+	width: 100px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.restart {
+	background: red;
 }

@@ -10,7 +10,7 @@ class Game extends Component {
 		currentScore1: 0,
 		total2: null,
 		currentScore2: 0,
-		dice: [null, null],
+		dice: [0, 0],
 		turn: 0, // false mean player 1 , true player 2
 	};
 
@@ -21,7 +21,9 @@ class Game extends Component {
 		this.setState({
 			dice: [randomDice, randomDice2],
 		});
-		sum === 12 ? this.changeTurn() : this.handelCurrentScore(sum);
+		randomDice === randomDice2
+			? this.changeTurn()
+			: this.handelCurrentScore(sum);
 	};
 	hold = () => {
 		if (!this.state.turn) {
@@ -51,6 +53,17 @@ class Game extends Component {
 			this.setState((prev) => ({ currentScore2: prev.currentScore2 + sum }));
 		}
 	};
+	reset = async () => {
+		await this.setState({
+			total1: null,
+			currentScore1: 0,
+			total2: null,
+			currentScore2: 0,
+			dice: [0, 0],
+			turn: 0,
+		});
+		await this.setState({ turn: 1 });
+	};
 
 	render() {
 		return (
@@ -64,6 +77,7 @@ class Game extends Component {
 					<ControlPanel
 						rollFunc={this.roll}
 						holdFunc={this.hold}
+						resetFunc={this.reset}
 						dice={this.state.dice}
 					/>
 					<Board2

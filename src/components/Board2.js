@@ -8,9 +8,9 @@ class Board2 extends Component {
 	}
 	render() {
 		return (
-			<div className="board-content">
-				<h1>PLAYER</h1>
-				<h3>{this.props.totalScore}</h3>
+			<div className="board-content board2">
+				<h1>PLAYER2</h1>
+				<h1>{this.props.totalScore}</h1>
 				<Current currentScore={this.props.currentScore} />
 			</div>
 		);
