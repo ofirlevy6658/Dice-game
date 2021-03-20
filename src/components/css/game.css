@@ -5,7 +5,8 @@
 }
 .container {
 	width: 100vw;
-	background-image: url("./background.jpg");
+	background: url("./d.jpg") no-repeat center center/cover;
+	/* background-color: rgba(0, 255, 0, 0.3); */
 	height: 100vh;
 	display: flex;
 }
@@ -47,5 +48,8 @@
 	}
 	.control {
 		width: 20vh;
+	}
+	.board-content h1 {
+		font-size: 1.5rem;
 	}
 }

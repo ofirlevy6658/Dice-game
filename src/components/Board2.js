@@ -4,7 +4,13 @@ import "./css/board.css";
 
 class Board2 extends Component {
 	shouldComponentUpdate({ turn }) {
-		return turn ? true : false;
+		if (turn) {
+			document.querySelector(".board2").classList.add("turn");
+			return true;
+		} else {
+			document.querySelector(".board2").classList.remove("turn");
+			return false;
+		}
 	}
 	render() {
 		return (
